@@ -17,7 +17,7 @@ footer {
   color: whitesmoke;
 }
 header {
-  justify-content: left;
+  justify-content: space-between;
 }
 header h1 {
   margin-left: 15px;
@@ -32,8 +32,8 @@ main {
   flex-wrap: wrap;
 }
 animalCard {
-  height: 220px;
-  width: 200px;
+  max-height: 160px;
+  max-width: 180px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,11 +50,59 @@ animalCard:hover {
   box-shadow: 6px 6px 1px 0px #131515;
 }
 animalCard img {
-  width: 100%;
+  height: 100px;
   margin-bottom: 15px;
 }
 .animalLabel {
   font-size: 18px;
   font-weight: bold;
   color: whitesmoke;
+}
+nav ul {
+  display: flex;
+  margin-right: 15px;
+
+}
+nav li {
+  display: block;
+  padding-left: 10px;
+  transition: ease-in;
+  transition-duration: 0.1s;
+}
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+li:hover {
+  scale: 1.1;
+}
+home, about {
+  width: 100vw;
+  height: 84vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+animalSingle {
+  height: 84vh;
+  display: flex;
+  justify-content: center;
+}
+animalSingle img {
+  height: 100%;
+  
+}
+input {
+  width: 30%;
+  height: 3vh;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-top: -6vh;
+  background-color: black;
+  font-size: 16px;
+  border: none;
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 0.5vh;
+  outline: none;
 }

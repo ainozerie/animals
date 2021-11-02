@@ -114,10 +114,11 @@ export const animals = [
     { name: "walrus" },
     { name: "water-buffalo" },
     { name: "weasel" },
+    { name: "woodpecker" },
     { name: "wolf" },
     { name: "wombat" },
     { name: "yak" },
-    { name: "zebra" },
+    { name: "zebra" }
   ];
 
   export default animals;
