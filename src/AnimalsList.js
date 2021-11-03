@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import animals from './animals';
 import AnimalsCard from './AnimalsCard';
+import {Switch, Route} from "react-router-dom";
 
 class AnimalsList extends Component {
     state = {
@@ -21,15 +22,19 @@ class AnimalsList extends Component {
         const animalslisting = animalsFilter.map((item) => (
             <AnimalsCard key = {item.name} name = {item.name} src={'https://source.unsplash.com/1600x900/?' + item.name} />
         ));
+        
 
         return (
             <>
-            <input type='text' name='search' onChange={this.searchInputHandler} placeholder='Search...' autoFocus />
-            {animalslisting}
+            <input type='text' name='search' onChange={this.searchInputHandler} placeholder='Search...' />
+            <Switch>
+                <Route exact path = '/animals' >
+                    {animalslisting}
+                </Route>
+            </Switch>
             </>
         );
     };
 };
-
 
 export default AnimalsList;

@@ -1,12 +1,12 @@
-import {NavLink, Switch, Route} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 const Nav = () => {
     return (
             <nav>
                 <ul>
-                    <li><NavLink to = '/'>Home</NavLink></li>
-                    <li><NavLink to = '/animals'>Animals</NavLink></li>
-                    <li><NavLink to = '/about'>About</NavLink></li>
+                    <li id='home-link'><NavLink to = '/'>Home</NavLink></li>
+                    <li id='animals-link'><NavLink to = '/animals'>Animals</NavLink></li>
+                    <li id='about-link'><NavLink to = '/about'>About</NavLink></li>
                 </ul>
             </nav>
     );

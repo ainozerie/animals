@@ -33,7 +33,7 @@ main {
 }
 animalCard {
   max-height: 160px;
-  max-width: 180px;
+  max-width: 320px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -83,26 +83,84 @@ home, about {
   justify-content: center;
   align-items: center;
 }
-animalSingle {
-  height: 84vh;
-  display: flex;
-  justify-content: center;
-}
-animalSingle img {
-  height: 100%;
-  
-}
 input {
   width: 30%;
   height: 3vh;
   margin-left: 35%;
   margin-right: 35%;
   margin-top: -6vh;
-  background-color: black;
+  background-color: #0a0b0b;
   font-size: 16px;
   border: none;
   text-decoration: none;
   color: whitesmoke;
   padding: 0.5vh;
   outline: none;
+  transition: ease-in-out;
+  transition-duration: 0.2s;
+}
+input:focus {
+  border-bottom: 1px solid silver;
+}
+.animalSingleWrapper {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.animalSingle {
+  height: 80vh;
+  margin: 1vh;
+  padding: 1vh 1vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: silver;
+  transition: ease-in-out;
+  transition-duration: 1s;
+  text-align: center;
+  position: relative;
+}
+.animalSingle img {
+  max-height: 74vh;
+  max-width: 92vw;
+}
+.animalSingle p {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+}
+.animalSingle button {
+  position: absolute;
+  right: 1vh;
+  top: 1vh;
+  width: 30px;
+  height: 30px;
+  color: whitesmoke;
+  background-color: #0a0b0b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+@media (max-width: 550px) {
+  header h1 {
+    font-size: 15px;
+  }
+  input {
+    width: 18%;
+    margin-left: 28%;
+    margin-right: 44%;
+    font-size: 12px;
+  }
+  input:hover {
+    width: 100vh;
+    margin-right: 15px;
+    margin-left: 15px;
+    z-index: 100;
+  }
+  
 }
