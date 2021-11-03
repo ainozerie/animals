@@ -111,7 +111,7 @@ input:focus {
 .animalSingle {
   height: 80vh;
   margin: 1vh;
-  padding: 1vh 1vh;
+  padding: 1vh 2vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -149,6 +149,9 @@ input:focus {
 @media (max-width: 550px) {
   header h1 {
     font-size: 15px;
+  }
+  .animalSingle {
+    padding: 1vh 1vh;
   }
   input {
     width: 18%;
