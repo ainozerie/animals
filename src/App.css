@@ -27,6 +27,7 @@ footer {
 }
 main {
   display: flex;
+  min-height: 84vh;
   justify-content: flex-start;
   align-content: flex-start;
   flex-wrap: wrap;
